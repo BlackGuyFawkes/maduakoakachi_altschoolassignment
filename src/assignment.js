@@ -16,7 +16,14 @@ const assignment = {};
 function sumOfNumbers(arrayOfNumbers) {
     return arrayOfNumbers.length;
 }
-// assignment.sumOfNumbers = sumOfNumbers;
+
+var arrayOfNumbers = [1, 2, 3];
+    
+var sum = arrayOfNumbers.reduce(function(a, b){
+    return a + b;
+}, 0);
+    
+console.log('First challenge: ' + sum);
 
 /**
  * Challenge - 2
@@ -30,7 +37,20 @@ function sumOfNumbers(arrayOfNumbers) {
 function countEvenNumbers(arrayOfNumbers) {
     return arrayOfNumbers.length;
 }
-// assignment.countEvenNumbers = countEvenNumbers;
+
+var arrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const sumEvens = (arrayOfNumbers) => {
+  var sum = 0;
+  for (var i = 0; i < arrayOfNumbers.length; i++) {
+    if (i % 2 === 0){ 
+    sum = sum + arrayOfNumbers[i];
+    }
+  }
+  return sum;
+}
+ 
+console.log('Second challenge: ' + sumEvens(arrayOfNumbers));
 
 /**
  * Challenge - 3
